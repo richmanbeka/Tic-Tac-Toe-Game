@@ -37,6 +37,4 @@
 - Developer: [richmanbeka]
 
 
-## 👨‍💻 Author
-- Built as part of **Nexus Front-End Boot Camp Project – 5**
-- Developer: [richmanbeka]
+
