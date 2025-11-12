@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <meta charset="UTF-8">
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+</head>
+<body>
+  
+  <div class="container">
+   <div class="start-screen" id="startScreen">
+      <h1>Tic Tac Toe</h1>
+      <div class="input-group">
+        <label>Player 1 Name:</label>
+        <input type="text" id="player1" placeholder="Player X">
+      </div>
+      
+      <div class="input-group" id="player2Group">
+        <label>Player 2 Name:</label>
+        <input type="text" id="player2" placeholder="Player O">
+      </div>
+      
+      <div class="input-group">
+        <label>Mode:</label>
+        <select id="modeSelect">
+          <option value="PvP">Player vs Player</option>
+          <option value="PvC">Player vs Computer</option>
+        </select>
+      </div>
+      
+      <div class="input-group" id="difficultyGroup" style="display:none;">
+        <label>Difficulty:</label>
+        <select id="difficultySelect">
+          <option value="easy">Easy</option>
+          <option value="medium" selected>Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </div>
+      
+      <button id="startBtn" class="btn btn-primary">Start Game</button>
+    </div>
+
+    <div class="game-screen" id="gameScreen" style="display:none;">
+      <h1>Tic Tac Toe</h1>
+      <div class="game-info">
+        <div class="current-player" id="CurrentPlayer">Player X's turn</div>
+      </div>
+
+      <div class="game-board" id="GameBoard">
+        <button class="cell" data-index="0"></button>
+        <button class="cell" data-index="1"></button>
+        <button class="cell" data-index="2"></button>
+        <button class="cell" data-index="3"></button>
+        <button class="cell" data-index="4"></button>
+        <button class="cell" data-index="5"></button>
+        <button class="cell" data-index="6"></button>
+        <button class="cell" data-index="7"></button>
+        <button class="cell" data-index="8"></button>
+      </div>
+
+      <div class="game-status" id="GameStatus"></div>
+      <div class="controls">
+        <button class="btn btn-primary" id="resetBtn">New Game</button>
+        <button class="btn btn-secondary" id="resetScoreBtn">Reset Score</button>
+        <button class="btn btn-secondary" id="backBtn">Back to Login</button>
+      </div>
+
+      <div class="score-board">
+        <div class="score x">
+          <div class="score-label" id="labelX">Player X</div>
+          <div class="score-value" id="ScoreX">0</div>
+        </div>
+        
+        <div class="score tie">
+          <div class="score-label">Ties</div>
+          <div class="score-value" id="scoreTie">0</div>
+        </div>
+        
+        <div class="score o">
+          <div class="score-label" id="labelO">Player O</div>
+          <div class="score-value" id="scoreO">0</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
